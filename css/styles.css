@@ -921,8 +921,8 @@ footer {
     display: grid;
     grid-template-columns: repeat(16, 1fr);
     grid-template-rows: repeat(15, 1fr);
-    height: 100vh;
-    row-gap: 0px; }
+    height: 105vh;
+    row-gap: 10px; }
     .grid-container-tres .grid-item-20 {
       grid-column-start: 7;
       grid-column-end: 11;
