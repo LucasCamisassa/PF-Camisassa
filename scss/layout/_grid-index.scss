@@ -1,0 +1,31 @@
+.grid-container-uno{
+    display: grid;
+    grid-template-columns: 1fr 2fr 1fr;
+    grid-template-rows: 5% 15% 20% 20% 10% 20% 10%;
+    height: 85vh;
+    row-gap: 0.1rem;
+    .grid-item-1{
+        @include grid-column(1,4);
+    }
+    .grid-item-2{
+        grid-column-start: 2;
+    }
+    .grid-item-3{
+        grid-column: span 4;
+        align-self: center;
+    }
+    .grid-item-4{
+        grid-column-start: 2;
+    }
+    .grid-item-5{
+        grid-column: span 4;
+        align-self: center;
+    }
+    .grid-item-6{
+        grid-column-start: 2;
+    }
+    .grid-item-7{
+        grid-column: span 4;
+        align-self: center;
+    }
+}

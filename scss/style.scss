@@ -1,0 +1,177 @@
+/*Variables/Mixin*/
+@import "utilities/variables";
+@import "utilities/mixin";
+/*Fin Variables/Mixin*/
+/*GRID*/
+@import "layout/grid-index";
+@import "layout/grid-Estilo-y-Caracter";
+@import "layout/grid-Literatura";
+@import "layout/grid-Cine-y-TV";
+/*FIN DE GRID*/
+
+
+/*RESET*/
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+/*FIN RESET*/
+
+/*ESTILOS GENERALES*/
+body {
+    background-image: url(../img/background-img.png);
+}
+
+header{
+    background-image: url(../img/banner.png);
+    border-bottom: 0.25rem solid $color-line;
+    display: flex;
+    position: sticky;
+    top: 0px;
+    height: 100px;
+    width: auto;
+    a{
+        display: flex;
+        img{
+            @include reductor (100%, 45%); 
+            object-fit: contain;
+            justify-self: center;
+            align-self: center;
+            margin-left: 15px;
+        }
+    }
+    nav{
+        ul{
+            list-style: none;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-wrap: wrap;
+            height: 80px;
+            gap: 0.2rem;
+            @include margin (5px, 5px);
+            li{
+                a{
+                    text-decoration: none;
+                    text-decoration-line: underline;
+                    text-decoration-color: $color-line;
+                    font-family: $font-orbitron;
+                    color: $color-text;
+                    font-size: 0.5rem;
+                    letter-spacing: 0.5px;
+                }
+            }
+        }
+    }
+}
+
+main{
+    margin: 0.5rem 0.5rem;
+    div{
+        h1{
+            font-family: $font-oxanium;
+            color: $color-h1;
+            font-size: 1rem;
+            text-align: center;
+        }
+    }
+    div{
+        h2{
+            font-family: $font-oxanium;
+            color: $color-h2;
+            text-align: center;
+            font-size: 0.75rem;
+            margin-top: 5px;
+        }
+    }
+    div{
+        p{
+            font-family: $font-orbitron;
+            color: $color-text;
+            font-size: 0.50rem;
+            text-align: center;
+            text-indent: 2px;
+        }
+    }
+    div{
+        img{
+            @include reductor (100%,100%);
+            object-fit: contain;
+        }
+    }
+    div{
+        iframe{
+            @include reductor (100%,100%);
+            object-fit: contain;
+        }
+    }
+}
+
+footer{
+    background-image: url(../img/banner.png);
+    border-top: 0.20rem solid $color-line;
+    height: 1.5rem;
+    display: flex;
+    justify-content: center;
+    p{
+        font-family: $font-orbitron;
+        color: $color-text;
+        font-size: 0.5rem;
+    }
+}
+/*FIN ESTILOS GENERALES*/
+
+/*CLASES*/
+.margin-separador{
+    margin: 3px;
+}
+
+.ocultar-bloque{
+    display: none;
+}
+
+/*CLASES PARA PISAR BOOTSTRAP*/
+.modificadores-li-items{
+    list-style: none;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    gap: 3px;
+    font-size: 9px;
+    letter-spacing: 1px;
+}
+
+
+ .button{
+    width: 35px;
+    height: 25px;
+
+ }
+
+ .icon-mod{
+    font-size: 0.6rem;
+ }
+
+ .color-text-bs{
+    font-family: $font-orbitron;
+    color: $color-text;
+    text-decoration: none;
+    align-self: center;
+    margin-top: 6px;
+ }
+
+ .img-bs{
+    @include reductor (65%, 65%);
+ }
+
+/*FIN CLASES BOOTSTRAP*/
+
+/*FIN CLASES*/
+
+/*MEDIA QUERY*/
+@import "layout/media-query";
+/*FIN MEDIA QUERY*/
+
+

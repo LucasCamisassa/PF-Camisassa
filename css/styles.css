@@ -1,0 +1,1078 @@
+/*Variables/Mixin*/
+/*Fin Variables/Mixin*/
+/*GRID*/
+.grid-container-uno {
+  display: grid;
+  grid-template-columns: 1fr 2fr 1fr;
+  grid-template-rows: 5% 15% 20% 20% 10% 20% 10%;
+  height: 85vh;
+  row-gap: 0.1rem; }
+  .grid-container-uno .grid-item-1 {
+    grid-column-start: 1;
+    grid-column-end: 4; }
+  .grid-container-uno .grid-item-2 {
+    grid-column-start: 2; }
+  .grid-container-uno .grid-item-3 {
+    grid-column: span 4;
+    align-self: center; }
+  .grid-container-uno .grid-item-4 {
+    grid-column-start: 2; }
+  .grid-container-uno .grid-item-5 {
+    grid-column: span 4;
+    align-self: center; }
+  .grid-container-uno .grid-item-6 {
+    grid-column-start: 2; }
+  .grid-container-uno .grid-item-7 {
+    grid-column: span 4;
+    align-self: center; }
+
+.grid-container-dos {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+  grid-template-rows: 2% 8% 8% 8% 4% 15% 4% 15% 4%;
+  height: 100vh;
+  row-gap: 1.25rem; }
+  .grid-container-dos .grid-item-8 {
+    grid-column-start: 2;
+    grid-column-end: 5; }
+  .grid-container-dos .grid-item-9 {
+    grid-column-start: 1;
+    grid-column-end: 6;
+    align-self: center; }
+  .grid-container-dos .grid-item-10 {
+    grid-column-start: 1;
+    grid-column-end: 6;
+    align-self: center; }
+  .grid-container-dos .grid-item-11 {
+    grid-column-start: 1;
+    grid-column-end: 6;
+    align-self: center; }
+  .grid-container-dos .grid-item-12 {
+    grid-column-start: 2;
+    grid-column-end: 5;
+    align-self: center; }
+  .grid-container-dos .grid-item-13 {
+    grid-column-start: 1;
+    grid-column-end: 3;
+    align-self: center; }
+  .grid-container-dos .grid-item-14 {
+    grid-column-start: 3;
+    grid-column-end: 6;
+    align-self: center; }
+  .grid-container-dos .grid-item-15 {
+    grid-column-start: 2;
+    grid-column-end: 5;
+    align-self: center; }
+  .grid-container-dos .grid-item-16 {
+    grid-column-start: 1;
+    grid-column-end: 3;
+    align-self: center; }
+  .grid-container-dos .grid-item-17 {
+    grid-column-start: 3;
+    grid-column-end: 6;
+    align-self: center; }
+  .grid-container-dos .grid-item-18 {
+    grid-column-start: 2;
+    grid-column-end: 5;
+    align-self: center; }
+  .grid-container-dos .grid-item-19 {
+    grid-column-start: 1;
+    grid-column-end: 6;
+    align-self: center; }
+
+.grid-container-tres {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+  grid-template-rows: 5% 10% 10% 10% 15% 10% 10% 10% 15%;
+  height: 85vh; }
+  .grid-container-tres .grid-item-20 {
+    grid-column-start: 3;
+    grid-column-end: 6;
+    grid-row-start: 1;
+    grid-row-end: 2;
+    align-self: center; }
+  .grid-container-tres .grid-item-21 {
+    grid-column-start: 2;
+    grid-column-end: 7;
+    grid-row-start: 2;
+    grid-row-end: 3;
+    align-self: center; }
+  .grid-container-tres .grid-item-22 {
+    grid-column-start: 2;
+    grid-column-end: 3;
+    grid-row-start: 3;
+    grid-row-end: 5;
+    align-self: center; }
+  .grid-container-tres .grid-item-23 {
+    grid-column-start: 4;
+    grid-column-end: 7;
+    grid-row-start: 3;
+    grid-row-end: 5;
+    align-self: center; }
+  .grid-container-tres .grid-item-24 {
+    grid-column-start: 3;
+    grid-column-end: 8;
+    grid-row-start: 1;
+    grid-row-end: 2;
+    align-self: center; }
+  .grid-container-tres .grid-item-25 {
+    grid-column-start: 2;
+    grid-column-end: 7;
+    grid-row-start: 5;
+    grid-row-end: 6;
+    align-self: center; }
+  .grid-container-tres .grid-item-26 {
+    grid-column-start: 2;
+    grid-column-end: 3;
+    grid-row-start: 6;
+    grid-row-end: 8;
+    align-self: center; }
+  .grid-container-tres .grid-item-27 {
+    grid-column-start: 2;
+    grid-column-end: 7;
+    grid-row-start: 8;
+    grid-row-end: 9;
+    align-self: center; }
+  .grid-container-tres .grid-item-28 {
+    grid-column-start: 4;
+    grid-column-end: 5;
+    grid-row-start: 6;
+    grid-row-end: 8;
+    align-self: center; }
+  .grid-container-tres .grid-item-29 {
+    grid-column-start: 6;
+    grid-column-end: 7;
+    grid-row-start: 6;
+    grid-row-end: 8;
+    align-self: center; }
+  .grid-container-tres .grid-item-30 {
+    grid-column-start: 2;
+    grid-column-end: 7;
+    grid-row-start: 9;
+    grid-row-end: 10;
+    align-self: center; }
+
+.grid-container-cuatro {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
+  grid-template-rows: 2% 18% 12% 20% 10% 10% 5% 5% 5% 5%;
+  height: 100vh;
+  row-gap: 2rem; }
+  .grid-container-cuatro .grid-item-33 {
+    grid-column-start: 3;
+    grid-column: span 6; }
+  .grid-container-cuatro .grid-item-34 {
+    grid-column-start: 1;
+    grid-row-start: 2;
+    grid-row: span 1; }
+  .grid-container-cuatro .grid-item-35 {
+    grid-column-start: 6;
+    grid-row-start: 2;
+    grid-row: span 1; }
+  .grid-container-cuatro .grid-item-36 {
+    grid-column: 2;
+    grid-column-end: 6;
+    grid-row-start: 2;
+    align-self: center; }
+  .grid-container-cuatro .grid-item-37 {
+    grid-row-start: 4;
+    grid-column-start: 1;
+    grid-row: span 1; }
+  .grid-container-cuatro .grid-item-38 {
+    grid-column: 2;
+    grid-column-end: 7;
+    grid-row-start: 3;
+    align-self: center; }
+  .grid-container-cuatro .grid-item-39 {
+    grid-row-start: 7;
+    grid-row-end: 8;
+    grid-column-start: 4;
+    grid-column-end: 7;
+    justify-self: center; }
+  .grid-container-cuatro .grid-item-40 {
+    grid-row-start: 4;
+    grid-column-start: 1;
+    grid-row: span 1; }
+  .grid-container-cuatro .grid-item-41 {
+    grid-column-start: 6;
+    grid-row-start: 2;
+    grid-row: span 1; }
+  .grid-container-cuatro .grid-item-42 {
+    grid-column: 2;
+    grid-column-end: 6;
+    grid-row-start: 4;
+    align-self: center; }
+  .grid-container-cuatro .grid-item-43 {
+    grid-row-start: 7;
+    grid-row-end: 8;
+    grid-column-start: 1;
+    grid-column-end: 4;
+    justify-self: center; }
+  .grid-container-cuatro .grid-item-44 {
+    grid-row: 9;
+    grid-row-end: 10;
+    grid-column: 2;
+    grid-column-end: 8; }
+  .grid-container-cuatro .grid-item-45 {
+    grid-row-start: 5;
+    grid-column: span 6;
+    align-self: center; }
+  .grid-container-cuatro .grid-item-46 {
+    grid-row: 6;
+    grid-column: 1;
+    grid-column-end: 7;
+    align-self: center; }
+
+/*FIN DE GRID*/
+/*RESET*/
+* {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box; }
+
+/*FIN RESET*/
+/*ESTILOS GENERALES*/
+body {
+  background-image: url(../img/background-img.png); }
+
+header {
+  background-image: url(../img/banner.png);
+  border-bottom: 0.25rem solid #67d627;
+  display: flex;
+  position: sticky;
+  top: 0px;
+  height: 100px;
+  width: auto; }
+  header a {
+    display: flex; }
+    header a img {
+      width: 100%;
+      height: 45%;
+      object-fit: contain;
+      justify-self: center;
+      align-self: center;
+      margin-left: 15px; }
+  header nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    height: 80px;
+    gap: 0.2rem;
+    margin-top: 5px;
+    margin-bottom: 5px; }
+    header nav ul li a {
+      text-decoration: none;
+      text-decoration-line: underline;
+      text-decoration-color: #67d627;
+      font-family: "Orbitron", sans-serif;
+      color: #2DE737;
+      font-size: 0.5rem;
+      letter-spacing: 0.5px; }
+
+main {
+  margin: 0.5rem 0.5rem; }
+  main div h1 {
+    font-family: "Oxanium", sans-serif;
+    color: #CD15D2;
+    font-size: 1rem;
+    text-align: center; }
+  main div h2 {
+    font-family: "Oxanium", sans-serif;
+    color: #c22f25;
+    text-align: center;
+    font-size: 0.75rem;
+    margin-top: 5px; }
+  main div p {
+    font-family: "Orbitron", sans-serif;
+    color: #2DE737;
+    font-size: 0.50rem;
+    text-align: center;
+    text-indent: 2px; }
+  main div img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain; }
+  main div iframe {
+    width: 100%;
+    height: 100%;
+    object-fit: contain; }
+
+footer {
+  background-image: url(../img/banner.png);
+  border-top: 0.2rem solid #67d627;
+  height: 1.5rem;
+  display: flex;
+  justify-content: center; }
+  footer p {
+    font-family: "Orbitron", sans-serif;
+    color: #2DE737;
+    font-size: 0.5rem; }
+
+/*FIN ESTILOS GENERALES*/
+/*CLASES*/
+.margin-separador {
+  margin: 3px; }
+
+.ocultar-bloque {
+  display: none; }
+
+/*CLASES PARA PISAR BOOTSTRAP*/
+.modificadores-li-items {
+  list-style: none;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  gap: 3px;
+  font-size: 9px;
+  letter-spacing: 1px; }
+
+.button {
+  width: 35px;
+  height: 25px; }
+
+.icon-mod {
+  font-size: 0.6rem; }
+
+.color-text-bs {
+  font-family: "Orbitron", sans-serif;
+  color: #2DE737;
+  text-decoration: none;
+  align-self: center;
+  margin-top: 6px; }
+
+.img-bs {
+  width: 65%;
+  height: 65%; }
+
+/*FIN CLASES BOOTSTRAP*/
+/*FIN CLASES*/
+/*MEDIA QUERY*/
+/*MEDIA QUERY TABLET INDEX.HTML*/
+@media screen and (min-width: 600px) {
+  .margin-separador {
+    margin: 5px; }
+  header {
+    list-style: none;
+    justify-self: space-evenly;
+    align-self: center;
+    width: auto; }
+    header nav ul {
+      gap: 1.2rem; }
+      header nav ul li a {
+        font-size: 1.15rem; }
+  main div h1 {
+    font-size: 1.5rem; }
+  main div h2 {
+    font-size: 0.85rem; }
+  main div p {
+    font-size: .7rem; }
+  /* GRID INDEX.HTML*/
+  .grid-container-uno {
+    display: grid;
+    grid-template-columns: repeat(11, 0.25fr);
+    grid-template-rows: 10% 10% 10% 15% 10% 10% 15% 10% 10%;
+    height: 90vh;
+    row-gap: 0.5rem; }
+    .grid-container-uno .grid-item-1 {
+      grid-column-start: 4;
+      grid-column-end: 9;
+      align-self: center; }
+    .grid-container-uno .grid-item-2 {
+      grid-column-start: 2;
+      grid-column-end: 6;
+      grid-row-start: 2;
+      grid-row-end: 4; }
+    .grid-container-uno .grid-item-3 {
+      grid-column-start: 2;
+      grid-column-end: 6;
+      grid-row-start: 4;
+      grid-row-end: 6;
+      align-self: flex-start; }
+    .grid-container-uno .grid-item-4 {
+      grid-column-start: 7;
+      grid-column-end: 11;
+      grid-row-start: 2;
+      grid-row-end: 4; }
+    .grid-container-uno .grid-item-5 {
+      grid-column-start: 7;
+      grid-column-end: 11;
+      grid-row-start: 4;
+      grid-row-end: 6;
+      align-self: center; }
+    .grid-container-uno .grid-item-6 {
+      grid-column-start: 4;
+      grid-column: span 5;
+      grid-row-start: 7;
+      grid-column-end: 9; }
+    .grid-container-uno .grid-item-7 {
+      grid-column-start: 3;
+      grid-column-end: 10;
+      grid-row: 8;
+      align-self: flex-start; }
+  /*FIN GRID INDEX.HTML*/
+  /* GRID ESTILO Y CARACTER DISTINTIVO.HTML */
+  .grid-container-dos {
+    display: grid;
+    grid-template-columns: repeat(12, 0.25fr);
+    grid-template-rows: 3% 8% 8% 10% 3% 12% 28% 3% 10% 5%;
+    height: 100vh;
+    row-gap: 0.8rem; }
+    .grid-container-dos .grid-item-8 {
+      grid-column-start: 2;
+      grid-column-end: 12; }
+    .grid-container-dos .grid-item-9 {
+      grid-column-start: 2;
+      grid-column-end: 12;
+      align-self: flex-start; }
+    .grid-container-dos .grid-item-10 {
+      grid-column-start: 2;
+      grid-column-end: 12;
+      align-self: flex-start; }
+    .grid-container-dos .grid-item-11 {
+      grid-column-start: 2;
+      grid-column-end: 12;
+      align-self: flex-start; }
+    .grid-container-dos .grid-item-12 {
+      grid-column-start: 3;
+      grid-column-end: 5;
+      grid-row-start: 5; }
+    .grid-container-dos .grid-item-13 {
+      grid-column-start: 2;
+      grid-column-end: 6;
+      grid-row-start: 6; }
+    .grid-container-dos .grid-item-14 {
+      grid-column-start: 2;
+      grid-column-end: 6;
+      grid-row-start: 7; }
+    .grid-container-dos .grid-item-15 {
+      grid-column-start: 8;
+      grid-column-end: 12;
+      grid-row-start: 5; }
+    .grid-container-dos .grid-item-16 {
+      grid-column-start: 8;
+      grid-column-end: 12;
+      grid-row-start: 6; }
+    .grid-container-dos .grid-item-17 {
+      grid-column-start: 8;
+      grid-column-end: 12;
+      grid-row-start: 7; }
+    .grid-container-dos .grid-item-18 {
+      grid-column-start: 4;
+      grid-column-end: 10;
+      grid-row-start: 8; }
+    .grid-container-dos .grid-item-19 {
+      grid-column-start: 2;
+      grid-column-end: 12;
+      grid-row-start: 9;
+      font-size: 0.6rem; }
+  /*FIN GRID Estilo-y-Caracter-distintivo.html*/
+  /*CLASES*/
+  .modificadores-li-items {
+    list-style: none;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    gap: 8px;
+    font-size: 1rem;
+    letter-spacing: 1px; }
+  .color-text-bs {
+    font-family: "Orbitron", sans-serif;
+    color: #2DE737;
+    text-decoration: none;
+    align-self: center;
+    margin-top: 6px; } }
+
+/*MEDIA QUERY DESKTOP INDEX.HTML*/
+@media screen and (min-width: 1024px) {
+  header a img {
+    width: 65%;
+    height: 65%;
+    object-fit: contain;
+    align-self: center;
+    justify-self: center; }
+  header nav ul {
+    gap: 1.5rem; }
+    header nav ul li a {
+      font-size: 1.1rem;
+      letter-spacing: 2px; }
+  main div h1 {
+    font-size: 36px; }
+  main div h2 {
+    font-size: 18px; }
+  main div p {
+    font-size: 0.85rem; }
+  .ocultar-bloque {
+    display: block; }
+  /*GRID INDEX.HTML*/
+  .grid-container-uno {
+    display: grid;
+    grid-template-columns: 1fr 2fr 2fr 1fr 2fr 1fr 2fr 2fr 1fr;
+    grid-template-rows: 8% 10% 15% 15% 10% 5% 10% 10% 10%;
+    height: 100vh;
+    row-gap: 0.5rem; }
+    .grid-container-uno .grid-item-1 {
+      grid-column-start: 3;
+      grid-column-end: 8; }
+    .grid-container-uno .grid-item-2 {
+      grid-column-start: 2;
+      grid-column-end: 5;
+      grid-row-start: 2;
+      grid-row-end: 4; }
+    .grid-container-uno .grid-item-3 {
+      grid-column-start: 2;
+      grid-column-end: 5;
+      grid-row-start: 4;
+      grid-row-end: 6; }
+    .grid-container-uno .grid-item-4 {
+      grid-column-start: 6;
+      grid-column-end: 9;
+      grid-row-start: 2;
+      grid-row-end: 4; }
+    .grid-container-uno .grid-item-5 {
+      grid-column-start: 6;
+      grid-column-end: 9;
+      grid-row-start: 4;
+      grid-row-end: 6; }
+    .grid-container-uno .grid-item-6 {
+      grid-column-start: 2;
+      grid-column-end: 9;
+      grid-row-start: 7;
+      grid-row-end: 9; }
+    .grid-container-uno .grid-item-7 {
+      grid-column-start: 2;
+      grid-column-end: 9;
+      grid-row-start: 9;
+      grid-row-end: 10; }
+  /*FIN GRID INDEX.HTML*/
+  /*GRID EyC distintivo*/
+  .grid-container-dos {
+    display: grid;
+    grid-template-columns: 1fr 2fr 2fr 1fr 2fr 1fr 2fr 2fr 1fr;
+    grid-template-rows: repeat(21, 1fr);
+    height: 100vh;
+    row-gap: 0px; }
+    .grid-container-dos .grid-item-8 {
+      grid-column-start: 3;
+      grid-column-end: 8;
+      grid-row-start: 1;
+      grid-row-end: 2; }
+    .grid-container-dos .grid-item-9 {
+      grid-column-start: 2;
+      grid-column-end: 9;
+      grid-row-start: 2;
+      grid-row-end: 3; }
+    .grid-container-dos .grid-item-10 {
+      grid-column-start: 2;
+      grid-column-end: 9;
+      grid-row-start: 3;
+      grid-row-end: 4; }
+    .grid-container-dos .grid-item-11 {
+      grid-column-start: 2;
+      grid-column-end: 9;
+      grid-row-start: 4;
+      grid-row-end: 5; }
+    .grid-container-dos .grid-item-12 {
+      grid-column-start: 2;
+      grid-column-end: 5;
+      grid-row-start: 5;
+      grid-row-end: 6;
+      justify-self: center;
+      align-self: center; }
+    .grid-container-dos .grid-item-13 {
+      grid-column-start: 2;
+      grid-column-end: 5;
+      grid-row-start: 6;
+      grid-row-end: 10;
+      margin-left: 18px; }
+    .grid-container-dos .grid-item-14 {
+      grid-column-start: 2;
+      grid-column-end: 5;
+      grid-row-start: 11;
+      grid-row-end: 15; }
+    .grid-container-dos .grid-item-15 {
+      grid-column-start: 6;
+      grid-column-end: 9;
+      grid-row-start: 5;
+      grid-row-end: 6;
+      justify-self: center;
+      align-self: center; }
+    .grid-container-dos .grid-item-16 {
+      grid-column-start: 6;
+      grid-column-end: 9;
+      grid-row-start: 6;
+      grid-row-end: 10;
+      margin-left: 18px; }
+    .grid-container-dos .grid-item-17 {
+      grid-column-start: 6;
+      grid-column-end: 9;
+      grid-row-start: 11;
+      grid-row-end: 15; }
+    .grid-container-dos .grid-item-18 {
+      grid-column-start: 3;
+      grid-column-end: 8;
+      grid-row-start: 17;
+      grid-row-end: 18; }
+    .grid-container-dos .grid-item-19 {
+      grid-column-start: 2;
+      grid-column-end: 9;
+      grid-row-start: 19;
+      grid-row-end: 21; }
+  /*FIN GRID Estilo-y-Caracter-distintivo.html*/
+  .grid-container-tres {
+    display: grid;
+    grid-template-columns: repeat(16, 1fr);
+    grid-template-rows: repeat(12, 2fr);
+    height: 100vh;
+    row-gap: 0px; }
+    .grid-container-tres .grid-item-20 {
+      grid-column-start: 7;
+      grid-column-end: 11;
+      grid-row-start: 1;
+      grid-row-end: 2; }
+    .grid-container-tres .grid-item-21 {
+      grid-column-start: 4;
+      grid-column-end: 14;
+      grid-row-start: 5;
+      grid-row-end: 6; }
+    .grid-container-tres .grid-item-22 {
+      grid-column-start: 3;
+      grid-column-end: 5;
+      grid-row-start: 2;
+      grid-row-end: 5; }
+    .grid-container-tres .grid-item-23 {
+      grid-column-start: 4;
+      grid-column-end: 14;
+      grid-row-start: 6;
+      grid-row-end: 7; }
+    .grid-container-tres .grid-item-24 {
+      grid-column-start: 8;
+      grid-column-end: 10;
+      grid-row-start: 2;
+      grid-row-end: 5; }
+    .grid-container-tres .grid-item-25 {
+      grid-column-start: 5;
+      grid-column-end: 13;
+      grid-row-start: 7;
+      grid-row-end: 9; }
+    .grid-container-tres .grid-item-26 {
+      grid-column-start: 13;
+      grid-column-end: 15;
+      grid-row-start: 2;
+      grid-row-end: 5; }
+    .grid-container-tres .grid-item-27 {
+      grid-column-start: 5;
+      grid-column-end: 13;
+      grid-row-start: 9;
+      grid-row-end: 11; }
+    .grid-container-tres .grid-item-28 {
+      grid-column-start: 2;
+      grid-column-end: 4;
+      grid-row-start: 7;
+      grid-row-end: 11; }
+    .grid-container-tres .grid-item-29 {
+      grid-column-start: 14;
+      grid-column-end: 16;
+      grid-row-start: 7;
+      grid-row-end: 11; }
+    .grid-container-tres .grid-item-30 {
+      grid-column-start: 4;
+      grid-column-end: 14;
+      grid-row-start: 11;
+      grid-row-end: 13; }
+  /*FIN GRID Literatura.html*/
+  .grid-container-cuatro {
+    display: grid;
+    grid-template-columns: repeat(15, 1fr);
+    grid-template-rows: repeat(19, 4%);
+    height: 100vh;
+    row-gap: 15px; }
+    .grid-container-cuatro .grid-item-33 {
+      grid-column-start: 6;
+      grid-column-end: 11;
+      grid-row-start: 1;
+      grid-row-end: 2;
+      align-self: center; }
+    .grid-container-cuatro .grid-item-34 {
+      grid-column-start: 2;
+      grid-column-end: 4;
+      grid-row-start: 2;
+      grid-row-end: 6;
+      align-self: center; }
+    .grid-container-cuatro .grid-item-35 {
+      grid-column-start: 13;
+      grid-column-end: 15;
+      grid-row-start: 2;
+      grid-row-end: 6;
+      align-self: center; }
+    .grid-container-cuatro .grid-item-36 {
+      grid-column-start: 4;
+      grid-column-end: 13;
+      grid-row-start: 2;
+      grid-row-end: 6;
+      align-self: center; }
+    .grid-container-cuatro .grid-item-37 {
+      grid-column-start: 2;
+      grid-column-end: 4;
+      grid-row-start: 6;
+      grid-row-end: 10; }
+    .grid-container-cuatro .grid-item-38 {
+      grid-column-start: 4;
+      grid-column-end: 11;
+      grid-row-start: 6;
+      grid-row-end: 10;
+      align-self: center; }
+    .grid-container-cuatro .grid-item-39 {
+      grid-column-start: 11;
+      grid-column-end: 15;
+      grid-row-start: 6;
+      grid-row-end: 10;
+      align-self: center; }
+    .grid-container-cuatro .grid-item-40 {
+      grid-column-start: 2;
+      grid-column-end: 4;
+      grid-row-start: 10;
+      grid-row-end: 14;
+      align-self: center; }
+    .grid-container-cuatro .grid-item-41 {
+      grid-column-start: 13;
+      grid-column-end: 15;
+      grid-row-start: 10;
+      grid-row-end: 14;
+      align-self: center; }
+    .grid-container-cuatro .grid-item-42 {
+      grid-column-start: 4;
+      grid-column-end: 13;
+      grid-row-start: 10;
+      grid-row-end: 14;
+      align-self: center; }
+    .grid-container-cuatro .grid-item-43 {
+      grid-column-start: 11;
+      grid-column-end: 15;
+      grid-row-start: 14;
+      grid-row-end: 17;
+      align-self: center; }
+    .grid-container-cuatro .grid-item-44 {
+      grid-column-start: 2;
+      grid-column-end: 6;
+      grid-row-start: 14;
+      grid-row-end: 17;
+      align-self: center; }
+    .grid-container-cuatro .grid-item-45 {
+      grid-column-start: 6;
+      grid-column-end: 11;
+      grid-row-start: 14;
+      grid-row-end: 17;
+      align-self: flex-end; }
+    .grid-container-cuatro .grid-item-46 {
+      grid-column-start: 2;
+      grid-column-end: 15;
+      grid-row-start: 17;
+      grid-row-end: 19;
+      align-self: flex-end; }
+  /* FIN GRID Cine y television.html*/
+  /*CLASES*/
+  .img {
+    width: 90%;
+    height: 90%; }
+  .modificadores-li-items {
+    gap: 4px;
+    font-size: 1rem;
+    letter-spacing: 2px; }
+  .color-text-bs {
+    font-family: "Orbitron", sans-serif;
+    color: #2DE737;
+    margin-top: 15px; } }
+
+@media screen and (min-width: 1440px) {
+  header {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: auto; }
+    header a img {
+      width: 65%;
+      height: 65%;
+      margin-left: 20px;
+      object-fit: contain; }
+    header nav ul {
+      gap: 1rem;
+      margin-left: 5px; }
+      header nav ul li a {
+        font-size: 1.5rem; }
+  main div h1 {
+    font-size: 2.5rem;
+    letter-spacing: 2px; }
+  main div h2 {
+    font-size: 1.5rem;
+    letter-spacing: 2px; }
+  main div p {
+    font-size: 1rem;
+    letter-spacing: 2px; }
+  main div img {
+    width: 100%;
+    height: 100%;
+    object-fit: fill; }
+  /*GRID INDEX.HTML*/
+  .grid-container-uno {
+    display: grid;
+    grid-template-columns: 1fr 2fr 2fr 1fr 2fr 1fr 2fr 2fr 1fr;
+    grid-template-rows: repeat(12, 1fr);
+    height: 100vh;
+    row-gap: 0.8rem; }
+    .grid-container-uno .grid-item-1 {
+      grid-column-start: 3;
+      grid-column-end: 8; }
+    .grid-container-uno .grid-item-2 {
+      grid-column-start: 2;
+      grid-column-end: 5;
+      grid-row-start: 2;
+      grid-row-end: 5; }
+    .grid-container-uno .grid-item-3 {
+      grid-column-start: 2;
+      grid-column-end: 5;
+      grid-row-start: 5;
+      grid-row-end: 9; }
+    .grid-container-uno .grid-item-4 {
+      grid-column-start: 6;
+      grid-column-end: 9;
+      grid-row-start: 2;
+      grid-row-end: 5; }
+    .grid-container-uno .grid-item-5 {
+      grid-column-start: 6;
+      grid-column-end: 9;
+      grid-row-start: 6;
+      grid-row-end: 8; }
+    .grid-container-uno .grid-item-6 {
+      grid-column-start: 3;
+      grid-column-end: 8;
+      grid-row-start: 9;
+      grid-row-end: 12; }
+    .grid-container-uno .grid-item-7 {
+      grid-column-start: 2;
+      grid-column-end: 9;
+      grid-row-start: 12;
+      grid-row-end: 13; }
+  /*FIN GRID INDEX.HTML*/
+  /* GRID EyC distintivos*/
+  .grid-container-dos {
+    display: grid;
+    grid-template-columns: 1fr 2fr 2fr 2fr 1fr 2fr 1fr 2fr 2fr 2fr 1fr;
+    grid-template-rows: repeat(16, 1fr);
+    height: 100vh;
+    row-gap: 0px; }
+    .grid-container-dos .grid-item-8 {
+      grid-column-start: 4;
+      grid-column-end: 9;
+      grid-row-start: 1;
+      grid-row-end: 2;
+      align-self: center; }
+    .grid-container-dos .grid-item-9 {
+      grid-column-start: 2;
+      grid-column-end: 11;
+      grid-row-start: 2;
+      grid-row-end: 4; }
+    .grid-container-dos .grid-item-10 {
+      grid-column-start: 2;
+      grid-column-end: 11;
+      grid-row-start: 4;
+      grid-row-end: 6; }
+    .grid-container-dos .grid-item-11 {
+      grid-column-start: 2;
+      grid-column-end: 11;
+      grid-row-start: 6;
+      grid-row-end: 8; }
+    .grid-container-dos .grid-item-12 {
+      grid-column-start: 5;
+      grid-column-end: 8;
+      grid-row-start: 8;
+      grid-row-end: 9; }
+    .grid-container-dos .grid-item-13 {
+      grid-column-start: 2;
+      grid-column-end: 5;
+      grid-row-start: 9;
+      grid-row-end: 12; }
+    .grid-container-dos .grid-item-14 {
+      grid-column-start: 5;
+      grid-column-end: 11;
+      grid-row-start: 9;
+      grid-row-end: 12; }
+    .grid-container-dos .grid-item-15 {
+      grid-column-start: 5;
+      grid-column-end: 8;
+      grid-row-start: 12;
+      grid-row-end: 13; }
+    .grid-container-dos .grid-item-16 {
+      grid-column-start: 2;
+      grid-column-end: 5;
+      grid-row-start: 13;
+      grid-row-end: 16; }
+    .grid-container-dos .grid-item-17 {
+      grid-column-start: 5;
+      grid-column-end: 11;
+      grid-row-start: 13;
+      grid-row-end: 16; }
+  /*FIN GRID Estilo-y-Caracter-distintivo.html*/
+  /* GRID LITERATURA*/
+  .grid-container-tres {
+    display: grid;
+    grid-template-columns: repeat(16, 1fr);
+    grid-template-rows: repeat(15, 1fr);
+    height: 100vh;
+    row-gap: 0px; }
+    .grid-container-tres .grid-item-20 {
+      grid-column-start: 7;
+      grid-column-end: 11;
+      grid-row-start: 1;
+      grid-row-end: 2; }
+    .grid-container-tres .grid-item-21 {
+      grid-column-start: 3;
+      grid-column-end: 15;
+      grid-row-start: 7;
+      grid-row-end: 8; }
+    .grid-container-tres .grid-item-22 {
+      grid-column-start: 3;
+      grid-column-end: 5;
+      grid-row-start: 3;
+      grid-row-end: 6; }
+    .grid-container-tres .grid-item-23 {
+      grid-column-start: 3;
+      grid-column-end: 15;
+      grid-row-start: 8;
+      grid-row-end: 9; }
+    .grid-container-tres .grid-item-24 {
+      grid-column-start: 8;
+      grid-column-end: 10;
+      grid-row-start: 3;
+      grid-row-end: 6; }
+    .grid-container-tres .grid-item-25 {
+      grid-column-start: 5;
+      grid-column-end: 13;
+      grid-row-start: 10;
+      grid-row-end: 12; }
+    .grid-container-tres .grid-item-26 {
+      grid-column-start: 13;
+      grid-column-end: 15;
+      grid-row-start: 3;
+      grid-row-end: 6; }
+    .grid-container-tres .grid-item-27 {
+      grid-column-start: 5;
+      grid-column-end: 13;
+      grid-row-start: 12;
+      grid-row-end: 14; }
+    .grid-container-tres .grid-item-28 {
+      grid-column-start: 2;
+      grid-column-end: 4;
+      grid-row-start: 11;
+      grid-row-end: 13; }
+    .grid-container-tres .grid-item-29 {
+      grid-column-start: 14;
+      grid-column-end: 16;
+      grid-row-start: 11;
+      grid-row-end: 13; }
+    .grid-container-tres .grid-item-30 {
+      grid-column-start: 4;
+      grid-column-end: 14;
+      grid-row-start: 14;
+      grid-row-end: 16; }
+  /*FIN GRID Literatura.html*/
+  /*GRID Cine y Tv*/
+  .grid-container-cuatro {
+    display: grid;
+    grid-template-columns: repeat(15, 1fr);
+    grid-template-rows: repeat(17, 1Fr);
+    height: 100vh;
+    row-gap: 0px; }
+    .grid-container-cuatro .grid-item-33 {
+      grid-column-start: 6;
+      grid-column-end: 11;
+      grid-row-start: 1;
+      grid-row-end: 2; }
+    .grid-container-cuatro .grid-item-34 {
+      grid-column-start: 2;
+      grid-column-end: 4;
+      grid-row-start: 3;
+      grid-row-end: 6; }
+    .grid-container-cuatro .grid-item-35 {
+      grid-column-start: 13;
+      grid-column-end: 15;
+      grid-row-start: 3;
+      grid-row-end: 6; }
+    .grid-container-cuatro .grid-item-36 {
+      grid-column-start: 5;
+      grid-column-end: 12;
+      grid-row-start: 3;
+      grid-row-end: 6; }
+    .grid-container-cuatro .grid-item-37 {
+      grid-column-start: 2;
+      grid-column-end: 4;
+      grid-row-start: 8;
+      grid-row-end: 11; }
+    .grid-container-cuatro .grid-item-38 {
+      grid-column-start: 5;
+      grid-column-end: 11;
+      grid-row-start: 8;
+      grid-row-end: 10; }
+    .grid-container-cuatro .grid-item-39 {
+      grid-column-start: 12;
+      grid-column-end: 15;
+      grid-row-start: 8;
+      grid-row-end: 11; }
+    .grid-container-cuatro .grid-item-40 {
+      grid-column-start: 2;
+      grid-column-end: 4;
+      grid-row-start: 12;
+      grid-row-end: 16; }
+    .grid-container-cuatro .grid-item-41 {
+      grid-column-start: 13;
+      grid-column-end: 15;
+      grid-row-start: 12;
+      grid-row-end: 16; }
+    .grid-container-cuatro .grid-item-42 {
+      grid-column-start: 5;
+      grid-column-end: 12;
+      grid-row-start: 12;
+      grid-row-end: 14; }
+    .grid-container-cuatro .grid-item-43 {
+      grid-column-start: 4;
+      grid-column-end: 14;
+      grid-row-start: 14;
+      grid-row-end: 16; }
+    .grid-container-cuatro .grid-item-44 {
+      grid-column-start: 4;
+      grid-column-end: 14;
+      grid-row-start: 14;
+      grid-row-end: 16; }
+    .grid-container-cuatro .grid-item-45 {
+      grid-column-start: 5;
+      grid-column-end: 12;
+      grid-row-start: 15;
+      grid-row-end: 17; }
+    .grid-container-cuatro .grid-item-46 {
+      grid-column-start: 4;
+      grid-column-end: 14;
+      grid-row-start: 14;
+      grid-row-end: 16; }
+  /* FIN GRID Cine y television.html*/
+  .ocultar {
+    display: none; }
+  .modificadores-li-items {
+    list-style: none;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    font-size: 18px;
+    letter-spacing: 2px; }
+  .color-text-bs {
+    font-family: "Orbitron", sans-serif;
+    color: #2DE737;
+    text-decoration: none;
+    align-self: center;
+    margin-top: 25px; } }
+
+/*FIN MEDIA QUERY*/

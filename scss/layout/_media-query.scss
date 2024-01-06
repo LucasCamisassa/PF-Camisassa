@@ -1,0 +1,897 @@
+/*MEDIA QUERY TABLET INDEX.HTML*/
+
+@media screen and (min-width: 600px) {
+
+    .margin-separador{
+        margin: 5px;
+    }
+
+    header{
+        list-style: none;
+        justify-self: space-evenly;
+        align-self: center;
+        width: auto;
+        nav{
+            ul{
+                gap: 1.2rem;
+                li{                    
+                    a{
+                        font-size: 1.15rem;
+                    }
+                }
+            }
+        }     
+    }
+
+    main{
+        div{
+            h1{
+                font-size: 1.5rem;
+            }
+        }
+        div{
+            h2{
+                font-size: 0.85rem;
+            }
+        }
+        div{
+            p{
+                font-size: .7rem;
+            }
+        }
+    }
+/* GRID INDEX.HTML*/
+    .grid-container-uno{
+        display: grid;
+        grid-template-columns: repeat(11, 0.25fr);
+        grid-template-rows: 10% 10% 10% 15% 10% 10% 15% 10% 10%;
+        height: 90vh;
+        row-gap: 0.5rem;
+        .grid-item-1{
+            grid-column-start: 4;
+            grid-column-end: 9;
+            align-self: center;
+        }
+        
+        .grid-item-2{
+            grid-column-start: 2;
+            grid-column-end: 6;
+            grid-row-start: 2;
+            grid-row-end: 4;
+        }
+        
+        .grid-item-3{
+            grid-column-start: 2;
+            grid-column-end: 6;
+            grid-row-start: 4;
+            grid-row-end: 6;
+            align-self:flex-start;
+        }
+        
+        .grid-item-4{
+            grid-column-start: 7;
+            grid-column-end: 11;
+            grid-row-start: 2;
+            grid-row-end: 4;
+        }
+        
+        .grid-item-5{
+            grid-column-start: 7;
+            grid-column-end: 11;
+            grid-row-start: 4;
+            grid-row-end: 6;
+            align-self: center;
+        }
+        
+        .grid-item-6{
+            grid-column-start: 4;
+            grid-column: span 5;
+            grid-row-start: 7;
+            grid-column-end: 9;
+        }
+        
+        .grid-item-7{
+            grid-column-start: 3;
+            grid-column-end: 10;
+            grid-row: 8;
+            align-self: flex-start;
+        }
+    }
+/*FIN GRID INDEX.HTML*/
+/* GRID ESTILO Y CARACTER DISTINTIVO.HTML */
+
+    .grid-container-dos{
+        display: grid;
+        grid-template-columns: repeat(12, 0.25fr);
+        grid-template-rows: 3% 8% 8% 10% 3% 12% 28% 3% 10% 5%;
+        height: 100vh;
+        row-gap: 0.8rem;
+        .grid-item-8{  
+            grid-column-start: 2;
+            grid-column-end: 12;
+        }
+        
+        .grid-item-9{
+            grid-column-start: 2;
+            grid-column-end: 12;
+            align-self: flex-start;
+        }
+        
+        .grid-item-10{
+            grid-column-start: 2;
+            grid-column-end: 12;
+            align-self: flex-start;
+        }
+        
+        .grid-item-11{
+            grid-column-start: 2;
+            grid-column-end: 12;
+            align-self: flex-start;
+        }
+        
+        .grid-item-12{
+            grid-column-start: 3;
+            grid-column-end: 5;
+            grid-row-start: 5;
+        }
+        
+        .grid-item-13{
+            grid-column-start: 2;
+            grid-column-end: 6;
+            grid-row-start: 6;
+        }
+        
+        .grid-item-14{
+            grid-column-start: 2;
+            grid-column-end: 6;
+            grid-row-start: 7;
+        }
+        
+        .grid-item-15{
+            grid-column-start: 8;
+            grid-column-end: 12;
+            grid-row-start: 5;
+        }
+        
+        .grid-item-16{
+            grid-column-start: 8;
+            grid-column-end: 12;
+            grid-row-start: 6;
+        }
+        
+        .grid-item-17{
+            grid-column-start: 8;
+            grid-column-end: 12;
+            grid-row-start: 7;
+        }
+        
+        .grid-item-18{
+            grid-column-start: 4;
+            grid-column-end: 10;
+            grid-row-start: 8;
+        }
+        
+        .grid-item-19{
+            grid-column-start: 2;
+            grid-column-end: 12;
+            grid-row-start: 9;
+            font-size: 0.6rem;
+        }
+    }
+/*FIN GRID Estilo-y-Caracter-distintivo.html*/
+
+/*CLASES*/
+    .modificadores-li-items{
+        list-style: none;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: center;
+        gap: 8px;
+        font-size: 1rem;
+        letter-spacing: 1px;
+    }
+    .color-text-bs{
+        font-family: $font-orbitron;
+        color: $color-text;
+        text-decoration: none;
+        align-self: center;
+        margin-top: 6px;
+     }
+}
+
+
+
+
+
+/*MEDIA QUERY DESKTOP INDEX.HTML*/
+
+@media screen and (min-width: 1024px) {
+
+header{
+    a{
+        img{
+            @include reductor (65%, 65%);
+            object-fit: contain;
+            align-self: center;
+            justify-self: center;
+        }
+    }
+    nav{
+        ul{
+            gap: 1.5rem;
+            li{
+                a{
+                    font-size: 1.1rem;
+                    letter-spacing: 2px;
+                }
+            }
+        }
+    }
+}
+
+main{
+    div{
+        h1{
+            font-size: 36px;
+        }
+    }
+    div{
+        h2{
+            font-size: 18px;
+        }
+    }
+    div{
+        p{
+            font-size: 0.85rem;
+        }
+    }
+}
+
+.ocultar-bloque{
+    display: block;
+}
+
+/*GRID INDEX.HTML*/
+
+.grid-container-uno{
+    display: grid;
+    grid-template-columns: 1fr 2fr 2fr 1fr 2fr 1fr 2fr 2fr 1fr;
+    grid-template-rows: 8% 10% 15% 15% 10% 5% 10% 10% 10%;
+    height: 100vh;
+    row-gap: 0.5rem;
+    .grid-item-1{
+        grid-column-start: 3;
+        grid-column-end: 8;
+    }    
+    .grid-item-2{
+        grid-column-start: 2;
+        grid-column-end: 5;
+        grid-row-start: 2;
+        grid-row-end: 4;
+    }    
+    .grid-item-3{
+        grid-column-start: 2;
+        grid-column-end: 5;
+        grid-row-start: 4;
+        grid-row-end: 6;
+    }    
+    .grid-item-4{
+        grid-column-start: 6;
+        grid-column-end: 9;
+        grid-row-start: 2;
+        grid-row-end: 4;
+    }    
+    .grid-item-5{
+        grid-column-start: 6;
+        grid-column-end: 9;
+        grid-row-start: 4;
+        grid-row-end: 6;
+    }    
+    .grid-item-6{
+        grid-column-start: 2;
+        grid-column-end: 9;
+        grid-row-start: 7;
+        grid-row-end: 9;
+    }
+    .grid-item-7{
+        grid-column-start: 2;
+        grid-column-end: 9;
+        grid-row-start: 9;
+        grid-row-end: 10;
+    }
+}
+/*FIN GRID INDEX.HTML*/
+
+/*GRID EyC distintivo*/
+.grid-container-dos{
+    display: grid;
+    grid-template-columns: 1fr 2fr 2fr 1fr 2fr 1fr 2fr 2fr 1fr;
+    grid-template-rows: repeat(21,1fr);
+    height: 100vh;
+    row-gap: 0px;
+    .grid-item-8{  
+        @include grid-column(3,8);
+        @include grid-row(1,2);
+    }    
+    .grid-item-9{
+        @include grid-column(2,9);
+        @include grid-row(2,3);
+    }    
+    .grid-item-10{
+        @include grid-column(2,9);
+        @include grid-row(3,4);
+    }    
+    .grid-item-11{
+        @include grid-column(2,9);
+        @include grid-row(4,5);
+    }    
+    .grid-item-12{
+        @include grid-column(2,5);
+        @include grid-row(5,6);
+        justify-self: center;
+        align-self: center;
+    }    
+    .grid-item-13{
+        @include grid-column(2,5);
+        @include grid-row(6,10);
+        margin-left: 18px;
+    }    
+    .grid-item-14{
+        @include grid-column(2,5);
+        @include grid-row(11,15);
+    }    
+    .grid-item-15{
+        @include grid-column(6,9);
+        @include grid-row(5,6);
+        justify-self: center;
+        align-self: center;
+    }    
+    .grid-item-16{
+        @include grid-column(6,9);
+        @include grid-row(6,10);
+        margin-left: 18px;
+    }    
+    .grid-item-17{
+        @include grid-column(6,9);
+        @include grid-row(11,15);
+    }
+    .grid-item-18{
+        @include grid-column(3,8);
+        @include grid-row(17,18);
+    }
+    .grid-item-19{
+        @include grid-column(2,9);
+        @include grid-row(19,21);
+    }
+}
+/*FIN GRID Estilo-y-Caracter-distintivo.html*/
+
+.grid-container-tres{
+    display: grid;
+    grid-template-columns: repeat(16, 1fr);
+    grid-template-rows: repeat(12,2fr);
+    height: 100vh;
+    row-gap: 0px;
+    .grid-item-20{  
+        @include grid-column(7,11);
+        @include grid-row(1,2);
+    }
+    
+    .grid-item-21{
+        @include grid-column(4,14);
+        @include grid-row(5,6);
+    }
+    
+    .grid-item-22{
+        @include grid-column(3,5);
+        @include grid-row(2,5);
+    }
+    
+    .grid-item-23{
+        @include grid-column(4,14);
+        @include grid-row(6,7);
+    }
+    
+    .grid-item-24{
+        @include grid-column(8,10);
+        @include grid-row(2,5);
+    }
+    
+    .grid-item-25{
+        @include grid-column(5,13);
+        @include grid-row(7,9);
+    }
+    
+    .grid-item-26{
+        @include grid-column(13,15);
+        @include grid-row(2,5);
+    }
+    
+    .grid-item-27{
+        @include grid-column(5,13);
+        @include grid-row(9,11);
+    }
+    
+    .grid-item-28{
+        @include grid-column(2,4);
+        @include grid-row(7,11);
+    }
+    
+    .grid-item-29{
+        @include grid-column(14,16);
+        @include grid-row(7,11);
+    }
+    
+    .grid-item-30{
+        @include grid-column(4,14);
+        @include grid-row(11,13);
+    }
+    
+}
+/*FIN GRID Literatura.html*/
+
+.grid-container-cuatro{
+    display: grid;
+    grid-template-columns: repeat(15, 1fr);
+    grid-template-rows: repeat(19, 4%);
+    height: 100vh;
+    row-gap: 15px;
+    .grid-item-33{
+        grid-column-start: 6;
+        grid-column-end: 11;
+        grid-row-start: 1;
+        grid-row-end: 2;
+        align-self: center;
+    }
+    
+    .grid-item-34{
+        grid-column-start: 2;
+        grid-column-end: 4;
+        grid-row-start: 2;
+        grid-row-end: 6;
+        align-self: center;
+    }
+    
+    .grid-item-35{
+        grid-column-start: 13;
+        grid-column-end: 15;
+        grid-row-start: 2;
+        grid-row-end: 6;
+        align-self: center;
+    }
+    
+    .grid-item-36{
+        grid-column-start: 4;
+        grid-column-end: 13;
+        grid-row-start: 2;
+        grid-row-end: 6;
+        align-self: center;
+    }
+    
+    .grid-item-37{
+        grid-column-start: 2;
+        grid-column-end: 4;
+        grid-row-start: 6;
+        grid-row-end: 10;
+    }
+    
+    .grid-item-38{
+        grid-column-start: 4;
+        grid-column-end: 11;
+        grid-row-start: 6;
+        grid-row-end: 10;
+        align-self: center;
+    }
+    
+    .grid-item-39{
+        grid-column-start: 11;
+        grid-column-end: 15;
+        grid-row-start: 6;
+        grid-row-end: 10;
+        align-self: center;
+    }
+    
+    .grid-item-40{
+        grid-column-start: 2;
+        grid-column-end: 4;
+        grid-row-start: 10;
+        grid-row-end: 14;
+        align-self: center;
+    }
+    
+    .grid-item-41{
+        grid-column-start: 13;
+        grid-column-end: 15;
+        grid-row-start: 10;
+        grid-row-end: 14;
+        align-self: center;
+    }
+    
+    .grid-item-42{
+        grid-column-start: 4;
+        grid-column-end: 13;
+        grid-row-start: 10;
+        grid-row-end: 14;
+        align-self: center;
+    }
+    
+    .grid-item-43{
+        grid-column-start: 11;
+        grid-column-end: 15;
+        grid-row-start: 14;
+        grid-row-end: 17;
+        align-self: center;
+    }
+    
+    .grid-item-44{
+        grid-column-start: 2;
+        grid-column-end: 6;
+        grid-row-start: 14;
+        grid-row-end: 17;
+        align-self: center;
+    }
+    
+    .grid-item-45{
+        grid-column-start: 6;
+        grid-column-end: 11;
+        grid-row-start: 14;
+        grid-row-end: 17;
+        align-self: flex-end;
+    }
+    
+    .grid-item-46{
+        grid-column-start: 2;
+        grid-column-end: 15;
+        grid-row-start: 17;
+        grid-row-end: 19;
+        align-self: flex-end;
+    }
+}
+/* FIN GRID Cine y television.html*/
+
+/*CLASES*/
+.img{
+    @include reductor (90%,90%);
+}
+
+.modificadores-li-items{
+    gap: 4px;
+    font-size: 1rem;
+    letter-spacing: 2px;
+}
+
+.color-text-bs{
+    font-family: $font-orbitron;
+    color: $color-text;
+    margin-top: 15px;
+ }
+
+}
+
+@media screen and (min-width: 1440px) {
+    
+    header{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            width: auto;
+        a{
+            img{
+                @include reductor (65%, 65%);
+                margin-left: 20px;
+                object-fit: contain;
+            }
+        }
+        nav{
+            ul{
+                gap: 1rem;
+                margin-left: 5px;
+                li{
+                    a{
+                        font-size: 1.5rem;
+                    }
+                }
+            }
+        }
+    }
+
+    main{
+        div{
+            h1{
+                font-size: 2.5rem;
+                letter-spacing: 2px;
+            }
+        }
+        div{
+            h2{
+                font-size: 1.5rem;
+                letter-spacing: 2px;
+            }
+        }
+        div{
+            p{
+                font-size: 1rem;
+                letter-spacing: 2px;
+            }
+        }
+        div{
+            img{
+                @include reductor (100%,100%);
+                object-fit: fill;
+            }
+        }
+    }
+
+    /*GRID INDEX.HTML*/
+
+.grid-container-uno{
+    display: grid;
+    grid-template-columns: 1fr 2fr 2fr 1fr 2fr 1fr 2fr 2fr 1fr;
+    grid-template-rows: repeat(12, 1fr);
+    height: 100vh;
+    row-gap: 0.8rem;
+    .grid-item-1{
+        grid-column-start: 3;
+        grid-column-end: 8;
+    }    
+    .grid-item-2{
+        grid-column-start: 2;
+        grid-column-end: 5;
+        grid-row-start: 2;
+        grid-row-end: 5;
+    }    
+    .grid-item-3{
+        grid-column-start: 2;
+        grid-column-end: 5;
+        grid-row-start: 5;
+        grid-row-end: 9;
+    }    
+    .grid-item-4{
+        grid-column-start: 6;
+        grid-column-end: 9;
+        grid-row-start: 2;
+        grid-row-end: 5;
+    }    
+    .grid-item-5{
+        grid-column-start: 6;
+        grid-column-end: 9;
+        grid-row-start: 6;
+        grid-row-end: 8;
+    }    
+    .grid-item-6{
+        grid-column-start: 3;
+        grid-column-end: 8;
+        grid-row-start: 9;
+        grid-row-end: 12;
+    }
+    .grid-item-7{
+        grid-column-start: 2;
+        grid-column-end: 9;
+        grid-row-start: 12;
+        grid-row-end: 13;
+    }
+}
+/*FIN GRID INDEX.HTML*/
+
+/* GRID EyC distintivos*/
+
+.grid-container-dos{
+    display: grid;
+    grid-template-columns: 1fr 2fr 2fr 2fr 1fr 2fr 1fr 2fr 2fr 2fr 1fr;
+    grid-template-rows: repeat(16, 1fr);
+    height: 100vh;
+    row-gap: 0px;
+    .grid-item-8{  
+        @include grid-column(4,9);
+        @include grid-row(1,2);
+        align-self: center;
+    }    
+    .grid-item-9{
+        @include grid-column(2,11);
+        @include grid-row(2,4);
+    }    
+    .grid-item-10{
+        @include grid-column(2,11);
+        @include grid-row(4,6);
+    }    
+    .grid-item-11{
+        @include grid-column(2,11);
+        @include grid-row(6,8);
+    }    
+    .grid-item-12{
+        @include grid-column(5,8);
+        @include grid-row(8,9);
+    }    
+    .grid-item-13{
+        @include grid-column(2,5);
+        @include grid-row(9,12);
+    }    
+    .grid-item-14{
+        @include grid-column(5,11);
+        @include grid-row(9,12);
+    }    
+    .grid-item-15{
+        @include grid-column(5,8);
+        @include grid-row(12,13);
+    }    
+    .grid-item-16{
+        @include grid-column(2,5);
+        @include grid-row(13,16);
+    }    
+    .grid-item-17{
+        @include grid-column(5,11);
+        @include grid-row(13,16);
+    }
+}
+/*FIN GRID Estilo-y-Caracter-distintivo.html*/
+
+/* GRID LITERATURA*/
+.grid-container-tres{
+    display: grid;
+    grid-template-columns: repeat(16, 1fr);
+    grid-template-rows: repeat(15,1fr);
+    height: 100vh;
+    row-gap: 0px;
+    .grid-item-20{  
+        @include grid-column(7,11);
+        @include grid-row(1,2);
+    }
+    
+    .grid-item-21{
+        @include grid-column(3,15);
+        @include grid-row(7,8);
+    }
+    
+    .grid-item-22{
+        @include grid-column(3,5);
+        @include grid-row(3,6);
+    }
+    
+    .grid-item-23{
+        @include grid-column(3,15);
+        @include grid-row(8,9);
+    }
+    
+    .grid-item-24{
+        @include grid-column(8,10);
+        @include grid-row(3,6);
+    }
+    
+    .grid-item-25{
+        @include grid-column(5,13);
+        @include grid-row(10,12);
+    }
+    
+    .grid-item-26{
+        @include grid-column(13,15);
+        @include grid-row(3,6);
+    }
+    
+    .grid-item-27{
+        @include grid-column(5,13);
+        @include grid-row(12,14);
+    }
+    
+    .grid-item-28{
+        @include grid-column(2,4);
+        @include grid-row(11,13);
+    }
+    
+    .grid-item-29{
+        @include grid-column(14,16);
+        @include grid-row(11,13);
+    }
+    
+    .grid-item-30{
+        @include grid-column(4,14);
+        @include grid-row(14,16);
+    }
+    
+}
+/*FIN GRID Literatura.html*/
+
+/*GRID Cine y Tv*/
+
+.grid-container-cuatro{
+    display: grid;
+    grid-template-columns: repeat(15, 1fr);
+    grid-template-rows: repeat(17, 1Fr);
+    height: 100vh;
+    row-gap: 0px;
+    .grid-item-33{
+        @include grid-column(6,11);
+        @include grid-row(1,2);
+    }
+    
+    .grid-item-34{
+        @include grid-column(2,4);
+        @include grid-row(3,6);
+    }
+    
+    .grid-item-35{
+        @include grid-column(13,15);
+        @include grid-row(3,6);
+    }
+    
+    .grid-item-36{
+        @include grid-column(5,12);
+        @include grid-row(3,6);
+    }
+    
+    .grid-item-37{
+        @include grid-column(2,4);
+        @include grid-row(8,11);
+    }
+    
+    .grid-item-38{
+        @include grid-column(5,11);
+        @include grid-row(8,10);
+    }
+    
+    .grid-item-39{
+        @include grid-column(12,15);
+        @include grid-row(8,11);
+    }
+    
+    .grid-item-40{
+        @include grid-column(2,4);
+        @include grid-row(12,16);
+    }
+    
+    .grid-item-41{
+        @include grid-column(13,15);
+        @include grid-row(12,16);
+    }
+    
+    .grid-item-42{
+        @include grid-column(5,12);
+        @include grid-row(12,14);
+    }
+    
+    .grid-item-43{
+        @include grid-column(4,14);
+        @include grid-row(14,16);
+    }
+    
+    .grid-item-44{
+        @include grid-column(4,14);
+        @include grid-row(14,16);
+    }
+    
+    .grid-item-45{
+        @include grid-column(5,12);
+        @include grid-row(15,17);
+    }
+    
+    .grid-item-46{
+        @include grid-column(4,14);
+        @include grid-row(14,16);
+    }
+}
+/* FIN GRID Cine y television.html*/
+
+.ocultar{
+    display: none;
+} 
+
+.modificadores-li-items{
+    list-style: none;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    font-size: 18px;
+    letter-spacing: 2px;
+}
+
+.color-text-bs{
+    font-family: $font-orbitron;
+    color: $color-text;
+    text-decoration: none;
+    align-self: center;
+    margin-top: 25px;
+ }
+
+}

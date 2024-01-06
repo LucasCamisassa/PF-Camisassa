@@ -1,0 +1,61 @@
+.grid-container-tres{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+    grid-template-rows: 5% 10% 10% 10% 15% 10% 10% 10% 15%;
+    height: 85vh;
+    .grid-item-20{  
+        @include grid-column(3,6);
+        @include grid-row(1,2);
+        align-self: center;
+    }
+    .grid-item-21{
+        @include grid-column(2,7);
+        @include grid-row(2,3);
+        align-self: center;
+    }
+    .grid-item-22{
+        @include grid-column(2,3);
+        @include grid-row(3,5);
+        align-self: center;
+    }
+    .grid-item-23{
+        @include grid-column(4,7);
+        @include grid-row(3,5);
+        align-self: center;
+    }
+    .grid-item-24{
+        @include grid-column(3,8);
+        @include grid-row(1,2);
+        align-self: center;
+    }
+    .grid-item-25{
+        @include grid-column(2,7);
+        @include grid-row(5,6);
+        align-self: center;
+    }
+    .grid-item-26{
+        @include grid-column(2,3);
+        @include grid-row(6,8);
+        align-self: center;
+    }
+    .grid-item-27{
+        @include grid-column(2,7);
+        @include grid-row(8,9);
+        align-self: center;
+    }
+    .grid-item-28{
+        @include grid-column(4,5);
+        @include grid-row(6,8);
+        align-self: center;
+    }
+    .grid-item-29{
+        @include grid-column(6,7);
+        @include grid-row(6,8);
+        align-self: center;
+    }   
+    .grid-item-30{
+        @include grid-column(2,7);
+        @include grid-row(9,10);
+        align-self: center;
+    } 
+}
